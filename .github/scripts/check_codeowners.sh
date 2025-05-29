@@ -9,9 +9,14 @@ fi
 
 if [ -z "${DIRECTORIES}" ]
 then
-  echo Error: No directories as argument.
+  echo Error: No directories found.
   echo Usage:
   echo "$0 [item1] [item2] [...]"
+  echo
+  echo or
+  echo
+  echo "export DIRECTORIES=\"item1 item2 ...\""
+  echo "$0"
   exit 1
 fi
 
